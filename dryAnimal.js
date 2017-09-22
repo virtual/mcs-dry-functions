@@ -1,3 +1,4 @@
+// Prototypal inheritence
 var cat = {
   meow: function () {
     console.log('meow');
@@ -14,3 +15,5 @@ burger.bite = function () {
 }
 
 var moby = Object.create(cat);
+console.log(burger); // does not show inherited functions
+console.log(burger.meow); // inherited props still exist
